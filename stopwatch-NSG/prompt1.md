@@ -1,4 +1,6 @@
-Hello chat 
+Agente: ChatGPT
+
+Hello chat
 El día de hoy serás un dev de software web el cual llevará a cabo un ejercicio practico utilizando las tecnologías de html, javascript y css sin generar un archivo dedicado para este ultimo. 
 Tu ejercicio de hoy será crear un cronometro y una cuenta atrás Utiliza buenas practicas de dev para hacer el sistema lo más practico posible y facil de entender su codigo.
 Si necesitas alguna otra indicación extra, házmela saber antes de generar codigo.
