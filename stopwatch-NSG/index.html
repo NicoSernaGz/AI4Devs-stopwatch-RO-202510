@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timer and Countdown</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #f6f8fa;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .section {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px 30px;
+    text-align: center;
+    width: 280px;
+  }
+
+  .time-display {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 15px 0;
+  }
+
+  button {
+    margin: 5px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  input[type="number"] {
+    width: 80px;
+    padding: 5px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+
+  .message {
+    color: #d9534f;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+</style>
+</head>
+
+<body>
+<h1>Timer and Countdown</h1>
+
+<div class="container">
+
+  <!-- Sección Cronómetro -->
+  <div class="section" id="timer-section">
+    <h2>Cronómetro</h2>
+    <div class="time-display" id="timer-display">00:00:00</div>
+    <div>
+      <button id="start-timer">Iniciar</button>
+      <button id="pause-timer">Pausar</button>
+      <button id="reset-timer">Reiniciar</button>
+    </div>
+  </div>
+
+  <!-- Sección Cuenta Atrás -->
+  <div class="section" id="countdown-section">
+    <h2>Cuenta Atrás</h2>
+    <input type="number" id="countdown-input" placeholder="Segundos" min="1">
+    <div class="time-display" id="countdown-display">00:00</div>
+    <div>
+      <button id="start-countdown">Contar</button>
+    </div>
+    <div class="message" id="countdown-message"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

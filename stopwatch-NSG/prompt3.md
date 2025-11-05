@@ -1,0 +1,1 @@
+separalos en dos archivos por favor, un index.html y un script.js
